@@ -26,7 +26,8 @@ for url in urls:
     mean, std = pingCache(url)
     print(mean)
     if (mean > -1):
-        results.append([mean, std])
-
-plt.plot(np.arange(results), map(lambda x: x[0], results))
+        results.append(mean)
+results = results[~np.isnan(results)]
+fig, ax = plt.subplots()
+ax.plot(np.arange(results), results)
 plt.savefig("means", format="png")
