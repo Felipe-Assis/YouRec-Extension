@@ -27,7 +27,12 @@ for url in urls:
     print(mean)
     if (mean > -1):
         results.append(mean)
+
+results = np.array(results)
 results = results[~np.isnan(results)]
+f = open("pings.txt", "w")
+f.write(str(results))
+f.close()
 fig, ax = plt.subplots()
-ax.plot(np.arange(results), results)
-plt.savefig("means", format="png")
+ax.plot(np.arange(len(results)), results)
+fig.savefig("means", format="png")
