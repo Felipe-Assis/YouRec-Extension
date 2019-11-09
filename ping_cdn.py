@@ -13,10 +13,9 @@ def pingCache(video_url):
         ping = os.popen("ping -c6 " + cache_url).read()
         pings = re.findall("time=\d+\.?\d?", ping)        
         pings = [float(ping.split("=")[1]) for ping in pings]
+        return np.mean(pings), np.std(pings)
     except:
-        return -1, -1        
-
-    return np.mean(pings), np.std(pings)
+        return -1, -1            
 
 
 mostPopular = open("mostpopularresults.txt", "r").read()
