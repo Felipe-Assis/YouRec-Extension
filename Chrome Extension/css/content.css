@@ -1,0 +1,68 @@
+
+#contextWindow {
+	z-index: 2147483646;
+	background-color: #000;
+	width: calc(18vh + 7vw);
+	height: calc(18vh + 7vw);
+	border: 0.2vw solid black;
+	opacity: 0.93;
+	position: fixed;
+	top: calc(100vh - 19.5vh - 8.5vw);
+	left: calc(100vw - 20vh - 8.5vw);
+}
+
+#loadingScreen {
+	position: absolute;
+	top: 0;
+	width: calc(18vh + 7vw);
+	height: calc(18vh + 7vw);
+	font-size: calc(1.5vh + 0.6vw);
+	color: white;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	user-select: none;
+	line-height: calc(18vh + 7vw);
+	background-color: #444;
+	opacity: 0.7;
+}
+
+#wordDiv {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	font-family: Calibri, sans-serif;
+	color: #808200;
+	font-size: calc(1.5vh + 0.6vw);
+	text-shadow: 0 0 1px #fff;
+	text-align: center;
+	vertical-align: bottom;
+	user-select: none;
+}
+
+#optionsDiv {
+	position: absolute;
+	top: 0;
+	display: none;
+	opacity: 0.9;
+}
+
+#subtitleSelect {
+	position: absolute;
+	top: calc(15.5vh + 6.5vw);
+	left: calc(0.8vh + 0.3vw);
+	width: calc(13vh + 6vw);
+	font-size: calc(0.9vh + 0.35vw);
+}
+
+#subtitleButton {
+	font-family: "Icons";
+	position: absolute;
+	left: calc(14.5vh + 6.5vw);
+	top: calc(15.5vh + 6.5vw);
+	width: calc(1.2vh + 0.5vw);
+	height: calc(1.2vh + 0.5vw);
+	background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}

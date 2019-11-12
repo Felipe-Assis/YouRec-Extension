@@ -1,0 +1,39 @@
+{
+    "name": "Youtube Recommendation Extension",
+    "version": "1.0",
+    "description": "QoS Aware Recommendations",
+	"permissions": ["activeTab", "declarativeContent", "storage", "http://127.0.0.1:5000/*"],
+	"content_scripts": [{
+		"matches": ["*://*.youtube.com/*"],
+		// "matches": ["https://www.netflix.com/*", "http://*.youtube.com/*"],
+		"js": ["js/libs/jquery.min.js",
+				"js/libs/Queue.js",
+				"js/dom.js",
+				"js/engine.js",
+				"js/controller.js"],
+		"css": ["css/content.css"]
+	}],
+	"page_action": {
+      "default_popup": "popup.html",
+	  "default_icon": {
+		  "16": "images/get_started16.png",
+		  "32": "images/get_started32.png",
+		  "48": "images/get_started48.png",
+		  "128": "images/get_started128.png"
+      }
+    },
+	"web_accessible_resources": [
+		"/models/gltf/*.gltf",
+		"/models/gltf/*.png",
+		"/models/gltf/*.glb",
+		"/models/gltf/*.bin",
+		"/images/*.png"
+	],
+	"icons": {
+		"16": "images/get_started16.png",
+		"32": "images/get_started32.png",
+		"48": "images/get_started48.png",
+		"128": "images/get_started128.png"
+    },
+    "manifest_version": 2
+  }
