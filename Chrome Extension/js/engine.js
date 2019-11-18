@@ -6,5 +6,10 @@ function triggerRecommendations(){
 
 // Setup function to be executed once:
 function init() {
+	console.log("Initiate engine.js");
+	// var p = new Ping();
+	// p.ping('www.google.com.br', res => {console.log(res)})
+
 	return 0
 }
+

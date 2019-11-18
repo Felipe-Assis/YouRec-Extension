@@ -8,6 +8,7 @@
 		// "matches": ["https://www.netflix.com/*", "http://*.youtube.com/*"],
 		"js": ["js/libs/jquery.min.js",
 				"js/libs/Queue.js",
+			    "js/libs/ping.js",
 				"js/dom.js",
 				"js/engine.js",
 				"js/controller.js"],
